@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background: green; */
+
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+main {
+  /* width: 500px;
+  height: 500px; */
+  /* background: green; */
+  margin: auto;
+  position: relative;
+}
+.roof {
+  z-index: 2;
+}
+
+.roof-frame-l,
+.roof-frame-r {
+  width: 200px;
+  top: 12%;
+}
+.roof-frame-l {
+  border-left: 35px solid transparent;
+  border-bottom: 45px solid rgb(247, 186, 186);
+  left: 40%;
+  transform: rotate(36deg) translate(-10%, -50%) scale(1, -1);
+  position: absolute;
+}
+
+.roof-frame-r {
+  border-right: 35px solid transparent;
+  border-bottom: 45px solid rgb(247, 186, 186);
+  right: 40%;
+  transform: rotate(-36deg) translate(10%, -50%) scale(1, -1);
+  position: absolute;
+}
+
+.wall {
+  width: 220px;
+  position: static;
+  border-top: 350px solid #ceaa83;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  margin: auto;
+}
+.bird_house {
+  width: 65px;
+  height: 60px;
+  background-color: #84797f;
+  bottom: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.clock {
+  width: 190px;
+  height: 190px;
+  border-radius: 100%;
+  background-color: #fff;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  position: absolute;
+}
+.flooring {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 30px solid blue;
+  margin: auto;
+  width: 220px;
+}
+
+.ref {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  display: grid;
+}
+.ref img {
+  width: 300px;
+  height: 300px;
+}
